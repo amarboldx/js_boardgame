@@ -1,0 +1,228 @@
+
+body{
+    background-color: #A0BDD0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+table {
+    border-collapse:separate;
+    padding : 7px;
+    background-color: white;
+    border-radius:10px;
+  }
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.board{
+    float: left;
+    width: auto;
+}
+
+th, td {
+    width: 50px;
+    height: 50px;
+  }
+
+  
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+  }
+button{
+    border-radius: 10px;
+}
+.scores{
+  display: flex;
+  flex-wrap: wrap;
+}
+.total_score{
+  text-align: center;
+  width: 100%;
+}
+.spring_score{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 22%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: #69BE6C;
+  border-radius: 10px;
+  border: 2px solid #3B8E3E;
+}
+.summer_score{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 22%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: #FEE874;
+  border-radius: 10px;
+  border: 2px solid #DDBB08;
+}
+.autumn_score{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 22%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: #EABD94;
+  border-radius: 10px;
+  border: 2px solid #6C3F14;
+}
+.winter_score{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 23%;
+  text-align: center;
+  background-color: #59D2EC; 
+  border-radius: 10px;
+  border: 2px solid #3190A5;
+}
+.container {
+  margin-top: 10%;
+  display: flex;
+  align-items: flex-start;
+}
+.shape{
+  margin-left: 5%;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#mirrorButton, #flipButton {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    margin-right: 5%;
+    width: 70%;
+    text-align: center;
+    align-self: flex-end;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+.accept_gameover{
+    margin-bottom: 10px;
+    margin-right: 5%;
+    width: 70%;
+    text-align: center;
+    align-self: flex-end;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.left{
+  padding-left: 5%;
+  float: left;
+}
+.right{
+  width: 40%;
+  padding-left: 5%;
+  float: right;
+}
+.line {
+  border: none;
+  border-top: 2px solid #000; 
+  width: 100%;
+}
+.missions{
+  position: relative;
+}
+.image-missions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  margin-top: 20px;
+}
+.image-results{
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.rows {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-image {
+  width: 100%; 
+  height: auto; 
+  position: relative;
+}
+
+.grid-item::after {
+  content: attr(data-letter);
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; 
+}
+.timer_div{
+  padding-left: 5%;
+}
+.gameoverScreen{
+  padding-left: 10%;
+  width: 50%;
+  position: relative;
+  display: none;
+}
+.spring_score_gameov{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 22%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: #69BE6C;
+  border-radius: 10px;
+  border: 2px solid #3B8E3E;
+}
+.summer_score_gameov{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 22%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: #FEE874;
+  border-radius: 10px;
+  border: 2px solid #DDBB08;
+}
+.autumn_score_gameov{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 22%;
+  margin-right: 2%;
+  text-align: center;
+  background-color: #EABD94;
+  border-radius: 10px;
+  border: 2px solid #6C3F14;
+}
+.winter_score_gameov{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 23%;
+  text-align: center;
+  background-color: #59D2EC; 
+  border-radius: 10px;
+  border: 2px solid #3190A5;
+}
+.mission1, .mission2, .mission3, .mission4 img{
+    width: 100%;
+    position: relative;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Maker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="init()">
+  <h1>Potato Map</h1>
+  <div class="content">
+    <div class="left">
+      <div id="board" class="board"></div>
+    </div>
+    
+    <div class="right">
+      <div class="scores">
+        <div id="spring_score" class="spring_score">Spring: - point</div>
+        <div id="summer_score" class="summer_score">Summer: - point</div>
+        <div id="autumn_score" class="autumn_score">Autumn: - point</div>
+        <div id="winter_score" class="winter_score">Winter: - point</div>
+        <div class="total_score"><p id="score"></p></div>
+      </div>
+      <div class="missions">
+        <hr class="line">
+        <div class="image-missions">
+          <div class="grid-item" data-letter="A">
+            <img src="assets/missions_eng/Group 68.png" alt="Image 1" class="grid-image">
+          </div>
+          <div class="grid-item" data-letter="B">
+            <img src="assets/missions_eng/Group 69.png" alt="Image 1" class="grid-image">
+          </div>
+          <div class="grid-item" data-letter="C">
+            <img src="assets/missions_eng/Group 70.png" alt="Image 1" class="grid-image">
+          </div>
+          <div class="grid-item" data-letter="D">
+            <img src="assets/missions_eng/Group 71.png" alt="Image 1" class="grid-image">
+          </div>
+        
+        </div>
+        <hr class="line">
+      </div>
+      <div class="container">
+        <div id="buttons" class="buttons">
+          <p>Current Element:</p>
+          <button id="mirrorButton">Mirror</button>
+          <button id="flipButton">Flip</button>
+        </div>
+        <div class="shape">
+          <div id="shape_table"></div>
+        </div>
+        <div class="timer_div">
+          <p id="timer"></p>
+          <br>
+          <p id = "current_elem_timer"></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="gameoverScreen">
+    <h2>Game Over!!</h2>
+    <div class="scores">
+      <div id="spring_score" class="spring_score_gameov">Spring: - point</div>
+      <div id="summer_score" class="summer_score_gameov">Summer: - point</div>
+      <div id="autumn_score" class="autumn_score_gameov">Autumn: - point</div>
+      <div id="winter_score" class="winter_score_gameov">Winter: - point</div>
+    </div>
+    <br>
+    <div class="borderlands_score"></div>
+    <br>
+    <br>
+    <div class="encircle_mountain"></div>
+    <br>
+    <br>
+    <div class="total_score_end"></div>
+    <br>
+    <div class="image-results">
+      <div class="rows">
+        <div class="mission1"></div>
+        <div class="mission2"></div>
+      </div>
+      <div class="rows">
+        <div class="mission3"></div>
+        <div class="mission4"></div>
+      </div>
+    </div>
+    <button class="accept_gameover">Click for New Game</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
