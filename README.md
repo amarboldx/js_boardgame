@@ -41,4 +41,7 @@ At the end of the game, the points you have earned over the four seasons will be
 ![image](https://github.com/amarboldx/js_boardgame/assets/136521600/56de6f79-aa8d-430a-87d2-adc8215dc06f)
 ![image](https://github.com/amarboldx/js_boardgame/assets/136521600/f3b4add3-87f2-4959-82c7-cbeee8f0c248)
 
+## Game saves
+The game automatically saves the game after every move. If there is an issue run the **deleteSavedGameState()** function in your browser's console
+
 
